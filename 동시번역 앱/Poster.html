@@ -1,0 +1,74 @@
+<p><span style="font-size: xx-large;">UI</span></p>
+<p>&nbsp;</p>
+<table style="width: 548px; height: 434px;">
+<tbody>
+<tr>
+<td><img alt="실제 실행된 모습" src="https://raw.githubusercontent.com/YeoSJ116/LMS/master/%EB%8F%99%EC%8B%9C%EB%B2%88%EC%97%AD%20%EC%95%B1/%EC%8B%A4%EC%A0%9C%20%EC%8B%A4%ED%96%89%20%ED%99%94%EB%A9%B4%20%EB%AA%A8%EC%8A%B5.png" width="180" height="360" /></td>
+<td><img alt="앱 인벤터에서 설계된 화면 모습" src="https://github.com/YeoSJ116/LMS/blob/master/%EB%8F%99%EC%8B%9C%EB%B2%88%EC%97%AD%20%EC%95%B1/%EC%95%B1%20%EC%9D%B8%EB%B2%A4%ED%84%B0%20%EC%83%81%EC%9D%98%20%EC%84%A4%EA%B3%84%20%ED%99%94%EB%A9%B4.png?raw=true" width="241" height="365" /></td>
+</tr>
+<tr>
+<td>실제 실행시 화면에 표시되는 모습 입니다.</td>
+<td>앱 인벤터에서 설계된 모습 입니다.</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="font-size: xx-large;">PPT 설명</span></p>
+<p><span style="font-size: large;">PPT 볼 때 참조해 주십시오.</span></p>
+<p><span style="font-size: large;">원본에도 애니메이션 효과가 하나도 없기에 pdf파일로 올립니다.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">잡담:</span></p>
+<p><span style="font-size: large;">한/영 분별 방법과 TTS 출력시 동기화 문제로 인해 정상적으로 동작하지 않는 문제점에 대한 내용도 다룹니다. 설명이 다소 복잡 할 수 있는점 양해 바랍니다.</span></p>
+<p><span style="font-size: large;">+] 글 다 쓰다가 로그인 세션 초과로 쓰던글이 다 날라갔습니다. 그래서 별도로 더 쉽게 이해할 수 있도록 다 풀어서 설명해둔 글은 적지 못하였습니다.</span></p>
+<p><span style="font-size: large;">혹시나 코딩에 익숙하지 않거나 처음이여서 이해하기 힘드신 분은 추가로 글을 남겨 주세요.</span></p>
+<p>&nbsp;</p>
+<p><img alt="Slide3.PNG" src="https://github.com/YeoSJ116/LMS/blob/master/%EB%8F%99%EC%8B%9C%EB%B2%88%EC%97%AD%20%EC%95%B1/3%EC%A3%BC%EC%B0%A8%20%EC%B2%AB%20%EB%B0%9C%ED%91%9C%20-%20%EC%95%B1%20%EC%9D%B8%EB%B2%A4%ED%84%B0%EB%A1%9C%20%EA%B5%AC%ED%98%84%ED%95%9C%20%EB%B2%88%EC%97%AD%EA%B8%B0/Slide3.PNG?raw=true" width="263" height="197" /></p>
+<p><span style="font-size: large;">전체적인 코드는 간결하게 구성되어져 있습니다.</span></p>
+<p><span style="font-size: large;">전체적인 동작 순서들을 옅은 사각형과 글자로 적어 두었습니다.</span></p>
+<p><span style="font-size: large;">아래의 세부적인 기능에 대한 설명은 동작 순서에 맞게 진행 하겠습니다.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;"><img alt="Slide4.PNG" src="https://github.com/YeoSJ116/LMS/blob/master/%EB%8F%99%EC%8B%9C%EB%B2%88%EC%97%AD%20%EC%95%B1/3%EC%A3%BC%EC%B0%A8%20%EC%B2%AB%20%EB%B0%9C%ED%91%9C%20-%20%EC%95%B1%20%EC%9D%B8%EB%B2%A4%ED%84%B0%EB%A1%9C%20%EA%B5%AC%ED%98%84%ED%95%9C%20%EB%B2%88%EC%97%AD%EA%B8%B0/Slide4.PNG?raw=true" width="267" height="200" /></span></p>
+<p><span style="font-size: large;">1. 버튼 및 음성 입력 버튼 동작 코드 (파란색 영역)</span></p>
+<p><span style="font-size: large;">-- 첫번째 블럭은 음성 인식버튼을 누르게 되면 음성 인식 서비스를 실행하고 결과 값을 바로 아래에 있는 블럭을 통해 내용을 입력합니다. 이후&nbsp;</span><span style="font-size: large;">translate 함수를 실행합니다.</span></p>
+<p><span style="font-size: large;">-- 마지막 3번째 블럭은&nbsp;</span><span style="font-size: large;">translate 함수만 실행 합니다. 음성 인식을 하지 않고 글을 복사하여 붙여넣거나 직접 내용을 입력하여 번역 하고 싶을때를 위해 남겨놓은 버튼 입니다.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">※ 함수는 간단히 말해 여러개의 코드를 하나로 묶은 코드의 덩어리 입니다.</span></p>
+<p><span style="font-size: large;">이때 반복되는 여러줄의 코드 또는 특정 기능을 수행하는 코드들을 함수로 깔끔하게 만들어두면 코딩할때 편리합니다.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img alt="Slide5.PNG" src="https://github.com/YeoSJ116/LMS/blob/master/%EB%8F%99%EC%8B%9C%EB%B2%88%EC%97%AD%20%EC%95%B1/3%EC%A3%BC%EC%B0%A8%20%EC%B2%AB%20%EB%B0%9C%ED%91%9C%20-%20%EC%95%B1%20%EC%9D%B8%EB%B2%A4%ED%84%B0%EB%A1%9C%20%EA%B5%AC%ED%98%84%ED%95%9C%20%EB%B2%88%EC%97%AD%EA%B8%B0/Slide5.PNG?raw=true" width="287" height="215" /></p>
+<p><span style="font-size: large;">2. 번역 시작 코드(함수)</span></p>
+<p><span style="font-size: large;">2개의 버튼을 누르면 결과적으로는&nbsp;</span><span style="font-size: large;">translate 함수를 실행하게 됩니다.</span></p>
+<p><span style="font-size: large;">그러나 2개의 버튼중에는 입력 값이 한글인지 영어인지 선택하는 버튼은 없습니다.</span></p>
+<p><span style="font-size: large;">그렇기에 번역을 진행하기 전에 한/영 분별(</span><span style="font-size: large;">Language_Detect 함수)</span><span style="font-size: large;">을 먼저한 이후에 이에따른 번역 요청을 하게 됩니다.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">※ Language_Detect 함수를 보면 입력 받는 함수가 있는데 이건 향후 제가 다른 곳에도 쓸때 편리하게 쓰기위해 저렇게 만들어 둔 것 입니다. 단지 입력된 문자값을 함수 동작하는 과정에 값을 읽는것이 아니라 함수 실행할때 같이 값을 넣어서 실행한다는 것 뿐 입니다.</span></p>
+<p><img alt="Slide6.PNG" src="https://github.com/YeoSJ116/LMS/blob/master/%EB%8F%99%EC%8B%9C%EB%B2%88%EC%97%AD%20%EC%95%B1/3%EC%A3%BC%EC%B0%A8%20%EC%B2%AB%20%EB%B0%9C%ED%91%9C%20-%20%EC%95%B1%20%EC%9D%B8%EB%B2%A4%ED%84%B0%EB%A1%9C%20%EA%B5%AC%ED%98%84%ED%95%9C%20%EB%B2%88%EC%97%AD%EA%B8%B0/Slide6.PNG?raw=true" width="276" height="207" /></p>
+<p><span style="font-size: large;">2-1 한/영 분별</span></p>
+<p><span style="font-size: large;">한/영 분별 방식은 한글과는 다르게 영어에만 있는 특성인 대/소문자 특성을 이용하여 한글인지 영어인지 판단합니다.</span></p>
+<p><span style="font-size: large;">Language_Detect 함수&nbsp;</span><span style="font-size: large;">블럭에 보면 upcase와 downcase가 있습니다. 이는 앱 인벤터에 있는 기능으로 모든 문자를 대문자(upcase)로 바꾸거나 소문자(downcase)로 바꾸어 줍니다.</span></p>
+<p><span style="font-size: large;">만약 한글만 있다면 대/소문자로 변환하여도 기존 원본과 차이점이 없기에 한글로 인식 할 수 있고 만약 하나라도 영어가 포함되어 있다면 대/소문자로 변환 할 경우 원본과 차이점을 보이게 됩니다.</span></p>
+<p><span style="font-size: large;">이러한 원리를 통해 한/영을 판별하게 되며 이런 판별 값을 전역 변수인 l</span><span style="font-size: large;">anguage 변수에 저장하게 됩니다.</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><img alt="Slide7.PNG" src="https://github.com/YeoSJ116/LMS/blob/master/%EB%8F%99%EC%8B%9C%EB%B2%88%EC%97%AD%20%EC%95%B1/3%EC%A3%BC%EC%B0%A8%20%EC%B2%AB%20%EB%B0%9C%ED%91%9C%20-%20%EC%95%B1%20%EC%9D%B8%EB%B2%A4%ED%84%B0%EB%A1%9C%20%EA%B5%AC%ED%98%84%ED%95%9C%20%EB%B2%88%EC%97%AD%EA%B8%B0/Slide7.PNG?raw=true" width="319" height="239" /></p>
+<p><span style="font-size: large;">3. 번역 끝나면 음성 출력</span></p>
+<p><span style="font-size: large;">한/영 판단 값을 통해 번역 요청에 필요한 코드(ko-en, en-ko)를 생성 합니다.</span></p>
+<p><span style="font-size: large;">한글로 판단 되었다면 ko-en 영어로 판단 되었다면 en-ko로 지역변수인 lang2lang에 저장하고 이 변수를 번역 요청시 사용하게 됩니다.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">번역 요청을 보내고 요청에 대한 응답(결과)이 도착하면 파란색 영역에 있는 함수(YandexTranslate1.GotTranslation)를 실행하게 됩니다.</span></p>
+<p><span style="font-size: large;">결과 값을 TextBox(Output_Text)에 출력하고 TTS를 실행 하는데 이때 TTS를 실행 할 때 한/영 탐지 값과는 반대의 언어로 즉, 번역된 언어에 맞게 반대로 바꾸어 음성 출력을 합니다.</span></p>
+<p><span style="font-size: large;">-- 영어에서 한국어로 번역 된것을 읽는데 한/영 탐지 결과에서 영어라고 된것을 그대로 가져와서 사용한다면 글을 읽는데 문제가 생기겠지요?</span></p>
+<p>&nbsp;</p>
+<p><img alt="Slide8.PNG" src="https://github.com/YeoSJ116/LMS/blob/master/%EB%8F%99%EC%8B%9C%EB%B2%88%EC%97%AD%20%EC%95%B1/3%EC%A3%BC%EC%B0%A8%20%EC%B2%AB%20%EB%B0%9C%ED%91%9C%20-%20%EC%95%B1%20%EC%9D%B8%EB%B2%A4%ED%84%B0%EB%A1%9C%20%EA%B5%AC%ED%98%84%ED%95%9C%20%EB%B2%88%EC%97%AD%EA%B8%B0/Slide8.PNG?raw=true" width="344" height="258" /></p>
+<p><span style="font-size: large;">부록: 동기화(SYNC)문제점 발생 예시</span></p>
+<p><span style="font-size: large;">Do라고 되어 있는 블럭은 제가 만든 앱에서 사용한 방식입니다.</span></p>
+<p><span style="font-size: large;">Don't라고 되어 있는것은 단순히 보면 번역 요청을 하고 요청된 값이 TextBox에 입력되고 TTS가 잘 읽어 줄 것 처럼 보입니다.</span></p>
+<p><span style="font-size: large;">하지만 요청을 보내는건 요청 보내고 나면 요청을 보내는 것으로서 동작이 끝나기에 응답(결과)이 오는것을 기다리지 않고 바로 그다음 함수를 실행하게 됩니다.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">이렇게 되면 만약 번역 결과가 오기도 전에 글을 읽게 한다면 읽을 내용이 없어서 TTS 기능은 정상적으로 동작하지 않게 됩니다.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">그래서 이러한 문제점을 방지 또는 해결하고자 한다면 응답을 받았을때 TTS가 실행되도록 Do라고 되어있는 블럭처럼 코드를 구성해야 합니다.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: large;">몇몇 일부 사람들이 겪는 문제점으로 보여 추가로 넣었습니다.</span></p>
